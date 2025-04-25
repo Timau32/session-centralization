@@ -39,10 +39,10 @@ logout / close — отключает соединение и очищает с�
 🛠️ Как использовать:
 Подключить этот Shared Worker во вкладках с помощью:
 
-ts
-Копировать
-Редактировать
+```js
 const worker = new SharedWorker('path-to-worker.js');
 worker.port.start();
 worker.port.postMessage({ event: 'connect', ... });
+
+```
 А в Chrome отладка возможна через chrome://inspect/#workers.
